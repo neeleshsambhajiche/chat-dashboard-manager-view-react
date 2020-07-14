@@ -40,9 +40,8 @@ export default function SearchBar() {
             variant="outlined"
             className={classes.Select}
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value={"Employee Email"}>Employee Email</MenuItem>
+            <MenuItem value={"BreachType"}>BreachType</MenuItem>
           </Select>
         </Grid>
         <Grid item xs={12} sm={4}>
