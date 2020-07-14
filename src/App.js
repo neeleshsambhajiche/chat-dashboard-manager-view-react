@@ -17,8 +17,8 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import BreachTable from "./BreachTable.js";
-import SearchBar from "./SearchBar.js";
+import BreachTable from "./components/BreachTable.js";
+import SearchBar from "./components/SearchBar.js";
 import Grid from "@material-ui/core/Grid";
 
 const drawerWidth = 240;

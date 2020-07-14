@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import Breach from "./App";
 import * as serviceWorker from "./serviceWorker";
-import PicDisplay from "./picDisplay.js";
-import SimpleDialogDemo from "./DialogPic.js";
 
 ReactDOM.render(
   <React.StrictMode>
