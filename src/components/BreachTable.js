@@ -47,20 +47,28 @@ class BreachTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = { rows: [] };
+    this.updateRows = this.updateRows.bind(this);
   }
 
   componentDidMount() {
     console.log("Mounted");
+    setInterval(this.updateRows, 2000);
+  }
+
+  updateRows() {
     let rows = [];
     fetch("http://localhost:5000/breaches")
       .then((response) => response.json())
       .then((result) => {
         result.map((row) => rows.push(row));
-        console.log(result);
         this.setState({
           rows: rows,
         });
       });
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   render() {
